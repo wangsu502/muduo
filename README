@@ -1,9 +1,12 @@
 Muduo is a multithreaded C++ network library based on
 the reactor pattern.
 
-http://github.com/chenshuo/muduo
+This fork is based on @chenshuo incredible work. 
+And I fixed some issues when trying to build the lib with clang.
 
-Copyright (c) 2010, Shuo Chen.  All rights reserved.
+http://github.com/wangsu502/muduo
+
+Copyright (c) 2019, Wang Su.  All rights reserved.
 
 Use of this source code is governed by a BSD-style
 license that can be found in the License file.
@@ -14,14 +17,15 @@ Requires:
   Boost (for boost::any only.)
 
 Tested on:
-  Debian 7 and above
-  Unbuntu 14.04 and above
-  CentOS 7 and above
+  Unbuntu 18.04 and above
 
 To build, run:
   ./build.sh
 
-See https://github.com/chenshuo/muduo-tutorial for
+To build with bazel by llvm toolchain:
+bazel build --crosstool_top=@llvm_toolchain//:toolchain muduo/net:net
+
+See https://github.com/wangsu502/muduo-tutorial for
 how to use muduo in your project.
   __  __           _
  |  \/  |         | |
