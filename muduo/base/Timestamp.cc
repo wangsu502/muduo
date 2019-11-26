@@ -6,6 +6,7 @@
 #include "muduo/base/Timestamp.h"
 
 #include <sys/time.h>
+#include <time.h>
 #include <stdio.h>
 
 #ifndef __STDC_FORMAT_MACROS

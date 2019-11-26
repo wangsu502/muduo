@@ -9,6 +9,8 @@
 #include "muduo/base/copyable.h"
 #include "muduo/base/Types.h"
 
+#include <time.h>
+
 struct tm;
 
 namespace muduo
